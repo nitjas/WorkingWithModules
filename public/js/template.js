@@ -1,7 +1,7 @@
-const errorMessage =
+export const errorMessage =
   "<p><em>You do not have any list items yet. Try adding one with the form above.</em></p>";
 
-function applyTemplate(item) {
+export function applyTemplate(item) {
   return `<div class="col-xs-12 col-sm-4 col-md-4 adj_text"><h3>${item.title}</h3>
   <p>${item.tagline}</p>
   <img src="${item.img}" alt="${item.alt}" />
@@ -11,7 +11,7 @@ function applyTemplate(item) {
   </div></div>`;
 }
 
-function sessionTemplate(sessions) {
+export function sessionTemplate(sessions) {
   // If there are no list items
   if (sessions < 1) return errorMessage;
 
